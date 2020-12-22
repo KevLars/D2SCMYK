@@ -1,4 +1,4 @@
-#D2SCMYK
+# D2SCMYK
 
 This is the original Death to sharpie code, only edited to be able to preview and create CMYK layers all at once. Instead of having to run all 4 layers separately through the program.
 
@@ -28,5 +28,7 @@ The extension -"color".jpg is used, so this naming scheme needs to be used other
 The colors that are shown in the preview can also be changed to test if drawing with other colors will look nice. I changed these colors to fit my sharpies. 
 Please change according to your own sharpies/pens to make the preview accurate.
 
-![Example picture](/pics/amersfoort.png)
-
+### Example input image
+![Example](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort.jpg?raw=true)
+### Then for that image, this is the preview that is generated:
+![GeneratedPreview](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort-generated.jpg?raw=true)
