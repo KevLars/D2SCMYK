@@ -28,5 +28,5 @@ The extension -"color".jpg is used, so this naming scheme needs to be used other
 The colors that are shown in the preview can also be changed to test if drawing with other colors will look nice. I changed these colors to fit my sharpies. 
 Please change according to your own sharpies/pens to make the preview accurate.
 
-![Example picture](../pics/amersfoort.png)
+![Example picture](/pics/amersfoort.png)
 
