@@ -7,6 +7,9 @@ Scott Cooper, Dullbits.com, <scottslongemailaddress@gmail.com>
 
 PDF Export added by Jan Krummrey, jan.krummrey.de
 
+Maybe see some of my drawn images at:
+https://www.instagram.com/larspoort12/
+
 This is code to create gcode or pdf in CMYK colors. It takes in 4 images that are separated as layers. Out comes 4 gcode files and 4 pdfs. 
 The result can be viewed in a window that overlaps all the layers.
 
