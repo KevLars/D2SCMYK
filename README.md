@@ -1,4 +1,4 @@
-D2SCMYK
+#D2SCMYK
 
 This is the original Death to sharpie code, only edited to be able to preview and create CMYK layers all at once. Instead of having to run all 4 layers separately through the program.
 
