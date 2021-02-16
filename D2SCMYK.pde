@@ -20,24 +20,29 @@ final float   image_size_y = 35 * 25.4;
 final float   paper_top_to_origin = 417;  //mm
 
 // Super fun things to tweak.  Not candy unicorn type fun, but still...
-final int     squiggle_total = 150;     // Total times to pick up the pen
-final int     squiggle_length = 400;    // Too small will fry your servo
-final int     half_radius = 7;          // How grundgy
-final int     adjustbrightness = 10;     // How fast it moves from dark to light, over draw
+final int     squiggle_total = 1000;     // Total times to pick up the pen for each layer
+final int     squiggle_length = 100;    // Too small will fry your servo
+final int     half_radius = 3;          // How grundgy
+final int     adjustbrightness = 2;     // How fast it moves from dark to light, over draw
 //lower brightness focusses the drawn squiggles more, higher brightness means the squiggles are spread out
-final float   sharpie_dry_out = 0.08;  // Simulate the death of sharpie, zero for super sharpie
+final float   sharpie_dry_out = 0.03;  // Simulate the death of sharpie, zero for super sharpie
 
-final String picture = "amersfoort"; //filename must have extension .jpg, 
+final String picture = "korra"; //filename must have extension -"color".jpg, 
 //otherwise change individual layers below
 
 StringList piclayer;
 String pic = "0";
 int rgb = #FFFFFF;
 
+float percentCyan = 0.25;
+float percentMagenta = 0.25;
+float percentYellow = 0.25;
+float percentBlack = 0.25;
+
 //These are colors that i think my sharpies have
 //Nothing is changed to the output files, only your preview changes
 int DrawColorgreen = #00FF00;
-int DrawColorlightblue = #00c5ff;
+int DrawColorlightblue = #00c5ff; //colors given in hex
 int DrawColoryellow = #FFFF00;
 int DrawColorpink = #FF00DD;
 int DrawColorblack = #000000;
@@ -108,7 +113,7 @@ void draw() {
       img.loadPixels();
       i=i+1;
     }
-    if (squiggle_count >= squiggle_total) {
+    if (squiggle_count >= percentCyan*squiggle_total) {
       i=0;
       k=k+1;
       dump_some_useless_stuff_and_close();
@@ -125,7 +130,7 @@ void draw() {
       img.loadPixels();
       i=i+1;
     }
-    if (squiggle_count >= squiggle_total) {
+    if (squiggle_count >= percentMagenta*squiggle_total) {
       i=0;
       k=k+1;
       dump_some_useless_stuff_and_close();
@@ -142,7 +147,7 @@ void draw() {
       img.loadPixels();
       i=i+1;
     }
-    if (squiggle_count >= squiggle_total) {
+    if (squiggle_count >= percentYellow*squiggle_total) {
       i=0;
       k=k+1;
       dump_some_useless_stuff_and_close();
@@ -159,14 +164,14 @@ void draw() {
       img.loadPixels();
       i=i+1;
     }
-    if (squiggle_count >= squiggle_total) {
+    if (squiggle_count >= percentBlack*squiggle_total) {
       i=0;
       k=k+1;
       dump_some_useless_stuff_and_close();
     }
   }
   random_darkness_walk();
-  if (squiggle_count_total >= squiggle_total*4) {
+  if (squiggle_count_total >= squiggle_total) {
     //endRecord();
     //grid();
     println("DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE");

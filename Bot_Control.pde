@@ -27,7 +27,7 @@ void move_abs(int x, int y) {
   if (y > drawing_max_y) { drawing_max_y = y; }
   
   if (is_pen_down) {
-    stroke(rgb,20-(squiggle_count*sharpie_dry_out));
+    stroke(rgb,70-(squiggle_count*sharpie_dry_out));
     vertex(x + center_x,y + center_y);
   }
   
