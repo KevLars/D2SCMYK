@@ -34,4 +34,4 @@ Please change according to your own sharpies/pens to make the preview accurate.
 ### Example input image
 ![Example](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort.jpg?raw=true)
 ### Then for that image, this is the preview that is generated:
-![GeneratedPreview](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort-generated.jpg?raw=true)
+![GeneratedPreview](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort-preview.jpg?raw=true)
