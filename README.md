@@ -35,3 +35,5 @@ Please change according to your own sharpies/pens to make the preview accurate.
 ![Example](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort.jpg?raw=true)
 ### Then for that image, this is the preview that is generated:
 ![GeneratedPreview](https://github.com/KevLars/D2SCMYK/blob/main/pics/amersfoort-preview.jpg?raw=true)
+
+Something i've found that actually makes the drawing better is that i reduce the image size put into the algorithm. This makes the lines able to fill the whole image easier and to me that looks better than with a high resolution image that creates a lot of lines localized, but not spread out as much. I normally reduce the image size to something like 300x400 pixels.
